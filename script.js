@@ -144,7 +144,7 @@ function handleCheckbox(){
     }
 }
 
-Array.from(allCheckBox).forEach((checkbox) => {
+allCheckBox.forEach((checkbox) => {
     checkbox.addEventListener('change',handleCheckbox);
 })
 
@@ -172,29 +172,8 @@ generateBtn.addEventListener('click',()=>{
 
     }
 
-    //new pass;
     console.log("starting the journey")
-    //remove old pass;
     password="";
-
-    //checkboxes check 
-
-    // if(uppercaseCheck.checked){
-    //     password += generateUpperCase();
-
-    // }
-    // if(lowecaseCheck.checked){
-    //     password += generateLowerCase();
-        
-    // }
-    // if(numbercheck.checked){
-    //     password += generateRandNumber();
-        
-    // }
-    // if(symbolcheck.checked){
-    //     password += generateSymbols();
-        
-    // }
 
     let funcArr = [];
 
@@ -239,5 +218,3 @@ generateBtn.addEventListener('click',()=>{
     //strength
     calcStrength();
 });
-
-
